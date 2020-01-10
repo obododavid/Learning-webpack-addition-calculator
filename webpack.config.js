@@ -7,5 +7,14 @@ module.exports = {
     output: {
         filename: "afterBuilding.js",
         path: path.resolve(__dirname, "myBuildFolder")
+    },
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader"]
+            }
+        ]
     }
+
 }
