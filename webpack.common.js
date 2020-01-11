@@ -1,4 +1,3 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     entry: {
@@ -6,11 +5,7 @@ module.exports = {
         secondEntryPoint: "./src/mySecondEntry.js"
     },
     // devtool: "none",
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: "./src/template.html"
-        })
-    ],
+
     module: {
         rules: [
             // {
