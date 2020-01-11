@@ -5,7 +5,7 @@ module.exports = {
     entry: "./src/myEntry.js",
     // devtool: "none",
     output: {
-        filename: "afterBuilding.js",
+        filename: "afterBuilding.[contentHash].js",
         path: path.resolve(__dirname, "myBuildFolder")
     },
     module: {
